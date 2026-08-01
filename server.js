@@ -206,3 +206,4 @@ server.listen(PORT, () => {
     console.log(`📁 Serving from: ./src`);
     console.log(`🔌 Connectors: ./connectors\n`);
 });
+module.exports = server;
