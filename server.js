@@ -179,7 +179,7 @@ const server = http.createServer((req, res) => {
     // 404 for other requests
     res.writeHead(404);
     res.end('Not found');
-});
+}
 
 // Helper function to serve files
 function serveFile(filePath, mimeType, res) {
@@ -199,11 +199,14 @@ function serveFile(filePath, mimeType, res) {
     });
 }
 
-server.listen(PORT, () => {
-    console.log(`\n✅ Aidstack Medical AI Server running!`);
-    console.log(`🌐 Open: http://localhost:${PORT}`);
-    console.log(`🔄 Proxying OpenMRS API at: ${OPENMRS_BASE_URL}`);
-    console.log(`📁 Serving from: ./src`);
-    console.log(`🔌 Connectors: ./connectors\n`);
-});
-module.exports = server;
+if (require.main === module) {
+    http.createServer(requestHandler).listen(PORT, () => {
+        console.log(`\n✅ Aidstack Medical AI Server running!`);
+        console.log(`🌐 Open: http://localhost:${PORT}`);
+        console.log(`🔄 Proxying OpenMRS API at: ${OPENMRS_BASE_URL}`);
+        console.log(`📁 Serving from: ./src`);
+        console.log(`🔌 Connectors: ./connectors\n`);
+    });
+}
+
+module.exports = requestHandler;
