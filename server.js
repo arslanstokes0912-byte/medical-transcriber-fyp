@@ -64,7 +64,6 @@ const server = http.createServer((req, res) => {
     // Serve connector files
     if (req.url.startsWith('/connectors/')) {
         const filePath = path.join(__dirnameAbs, req.url);
-        const filePath = path.join('.', req.url);
         serveFile(filePath, 'application/javascript', res);
         return;
     }
@@ -72,7 +71,6 @@ const server = http.createServer((req, res) => {
     // Serve config files
     if (req.url.startsWith('/config/')) {
         const filePath = path.join(__dirnameAbs, req.url);
-        const filePath = path.join('.', req.url);
         serveFile(filePath, 'application/json', res);
         return;
     }
