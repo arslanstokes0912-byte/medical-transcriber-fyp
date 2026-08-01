@@ -8,6 +8,7 @@ const https = require('https');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+const __dirnameAbs = __dirname;
 require('dotenv').config();
 
 const PORT = 3000;
@@ -41,19 +42,19 @@ const server = http.createServer((req, res) => {
 
     // Serve landing page for root path
     if (req.url === '/' || req.url === '/index.html') {
-        serveFile('./landing.html', 'text/html', res);
+        serveFile(path.join(__dirnameAbs, 'landing.html'), 'text/html', res);
         return;
     }
 
     // Serve app at /app or /src/index.html
     if (req.url === '/app' || req.url === '/src/index.html') {
-        serveFile('./src/index.html', 'text/html', res);
+        serveFile(path.join(__dirnameAbs, 'src/index.html'), 'text/html',
         return;
     }
 
     // Serve static files from src directory
     if (req.url.startsWith('/src/') || req.url.startsWith('/js/') || req.url.startsWith('/css/')) {
-        const filePath = path.join('.', req.url);
+        const filePath = path.join(__dirnameAbs, req.url);
         const ext = path.extname(filePath);
         const mimeType = MIME_TYPES[ext] || 'application/octet-stream';
         serveFile(filePath, mimeType, res);
