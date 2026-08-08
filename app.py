@@ -1,4 +1,4 @@
-﻿"""
+"""
 Healthaid Medical AI - Backend Server
 HIPAA-compliant backend for secure API key management and data handling
 """

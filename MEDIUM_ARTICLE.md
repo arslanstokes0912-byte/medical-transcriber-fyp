@@ -1,4 +1,4 @@
-﻿# Building an AI-Powered Clinical Transcriber with Intelligent ICD-10 Mapping
+# Building an AI-Powered Clinical Transcriber with Intelligent ICD-10 Mapping
 
 ## How we transformed voice notes into structured EHR data with automatic diagnosis coding
 

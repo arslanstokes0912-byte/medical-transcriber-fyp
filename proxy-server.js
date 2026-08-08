@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Simple CORS proxy for OpenMRS API
  * This allows the frontend to bypass CORS restrictions
  */

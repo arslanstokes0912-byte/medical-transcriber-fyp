@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Healthaid Medical AI - Server
  * Serves the application and proxies OpenMRS API requests
  */

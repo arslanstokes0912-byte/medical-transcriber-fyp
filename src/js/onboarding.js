@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Onboarding Tour Manager
  */
 

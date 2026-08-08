@@ -1,4 +1,4 @@
-﻿# Healthaid Medical AI - Modular Architecture
+# Healthaid Medical AI - Modular Architecture
 
 ## Overview
 

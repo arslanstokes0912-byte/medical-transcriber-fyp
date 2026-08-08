@@ -1,4 +1,4 @@
-﻿# Deploying to transcriber.Healthaid.ai
+# Deploying to transcriber.Healthaid.ai
 
 ## Overview
 

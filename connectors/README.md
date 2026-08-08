@@ -1,4 +1,4 @@
-﻿# EHR Connectors
+# EHR Connectors
 
 This directory contains pluggable EHR connectors for Healthaid Medical AI.
 

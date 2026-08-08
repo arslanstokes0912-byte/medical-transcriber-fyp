@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Session History Manager - localStorage persistence
  */
 
