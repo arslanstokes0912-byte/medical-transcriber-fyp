@@ -11,8 +11,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
         :root {
-            --aidstack-navy: #1A365D;
-            --aidstack-orange: #FF6B35;
+            --Healthaid-navy: #1A365D;
+            --Healthaid-orange: #FF6B35;
             --slate-dark: #0F172A;
             --slate-medium: #475569;
             --slate-light: #94A3B8;
@@ -36,14 +36,14 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, var(--aidstack-navy) 0%, var(--aidstack-orange) 100%);
+            background: linear-gradient(135deg, var(--Healthaid-navy) 0%, var(--Healthaid-orange) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .btn-primary {
-            background: var(--aidstack-orange);
+            background: var(--Healthaid-orange);
             color: white;
             padding: 16px 32px;
             border-radius: 12px;
@@ -65,13 +65,13 @@
 
         .btn-secondary {
             background: white;
-            color: var(--aidstack-navy);
+            color: var(--Healthaid-navy);
             padding: 16px 32px;
             border-radius: 12px;
             font-weight: 600;
             font-size: 18px;
             transition: all 0.3s ease;
-            border: 2px solid var(--aidstack-navy);
+            border: 2px solid var(--Healthaid-navy);
             cursor: pointer;
             display: inline-flex;
             align-items: center;
@@ -79,7 +79,7 @@
         }
 
         .btn-secondary:hover {
-            background: var(--aidstack-navy);
+            background: var(--Healthaid-navy);
             color: white;
             transform: translateY(-2px);
         }
@@ -111,12 +111,12 @@
 
         .icon-orange {
             background: rgba(255, 107, 53, 0.1);
-            color: var(--aidstack-orange);
+            color: var(--Healthaid-orange);
         }
 
         .icon-navy {
             background: rgba(26, 54, 93, 0.1);
-            color: var(--aidstack-navy);
+            color: var(--Healthaid-navy);
         }
 
         .hero-image {
@@ -129,7 +129,7 @@
         .stats-number {
             font-size: 48px;
             font-weight: 700;
-            color: var(--aidstack-orange);
+            color: var(--Healthaid-orange);
             font-family: 'Space Grotesk', sans-serif;
         }
 
@@ -160,14 +160,14 @@
                 <div class="flex items-center gap-3">
                     <div>
                         <div class="font-display font-bold text-xl">
-                            <span style="color: var(--aidstack-orange);">Healthaid</span> <span style="color: var(--Healthaid-navy);">Transcriber</span>
+                            <span style="color: var(--Healthaid-orange);">Healthaid</span> <span style="color: var(--Healthaid-navy);">Transcriber</span>
                         </div>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#features" class="text-slate-medium hover:text-aidstack-navy transition">Features</a>
-                    <a href="#how-it-works" class="text-slate-medium hover:text-aidstack-navy transition">How It Works</a>
-                    <a href="#integrations" class="text-slate-medium hover:text-aidstack-navy transition">Integrations</a>
+                    <a href="#features" class="text-slate-medium hover:text-Healthaid-navy transition">Features</a>
+                    <a href="#how-it-works" class="text-slate-medium hover:text-Healthaid-navy transition">How It Works</a>
+                    <a href="#integrations" class="text-slate-medium hover:text-Healthaid-navy transition">Integrations</a>
                     <a href="/src/index.html" class="btn-primary">Try Demo</a>
                 </div>
             </div>
@@ -215,10 +215,10 @@
                 </div>
             </div>
             <div class="float-animation">
-                <div class="hero-image" style="background: linear-gradient(135deg, var(--aidstack-navy) 0%, var(--aidstack-orange) 100%); padding: 40px;">
+                <div class="hero-image" style="background: linear-gradient(135deg, var(--Healthaid-navy) 0%, var(--Healthaid-orange) 100%); padding: 40px;">
                     <div style="background: white; border-radius: 16px; padding: 32px;">
                         <div class="flex items-center gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-full" style="background: var(--aidstack-orange);"></div>
+                            <div class="w-12 h-12 rounded-full" style="background: var(--Healthaid-orange);"></div>
                             <div>
                                 <div class="font-semibold">Dr. Sarah Johnson</div>
                                 <div class="text-sm text-slate-medium">Recording visit note</div>
@@ -241,7 +241,7 @@
                         </div>
                         <div class="mt-6 flex items-center justify-between">
                             <div class="text-xs text-slate-medium">✓ FHIR Validated</div>
-                            <button style="background: var(--aidstack-orange); color: white; padding: 8px 16px; border-radius: 8px; border: none; font-size: 14px; font-weight: 600;">
+                            <button style="background: var(--Healthaid-orange); color: white; padding: 8px 16px; border-radius: 8px; border: none; font-size: 14px; font-weight: 600;">
                                 Save to EHR
                             </button>
                         </div>
@@ -256,17 +256,17 @@
         <div class="grid md:grid-cols-3 gap-6">
             <div class="text-center p-8 rounded-2xl" style="background: linear-gradient(135deg, rgba(26, 54, 93, 0.05) 0%, rgba(26, 54, 93, 0.1) 100%);">
                 <div class="text-4xl mb-3">🏥</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Smart ICD-10 Mapping</h3>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Smart ICD-10 Mapping</h3>
                 <p class="text-sm text-slate-medium">Automatically matches diagnoses to precise ICD-10 codes using WHO standards</p>
             </div>
             <div class="text-center p-8 rounded-2xl" style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(255, 107, 53, 0.1) 100%);">
                 <div class="text-4xl mb-3">📋</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Comprehensive Notes</h3>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Comprehensive Notes</h3>
                 <p class="text-sm text-slate-medium">Structured clinical summaries with diagnoses, symptoms, and recommendations</p>
             </div>
             <div class="text-center p-8 rounded-2xl" style="background: linear-gradient(135deg, rgba(26, 54, 93, 0.05) 0%, rgba(26, 54, 93, 0.1) 100%);">
                 <div class="text-4xl mb-3">⚙️</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Fully Customizable</h3>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Fully Customizable</h3>
                 <p class="text-sm text-slate-medium">Configure all EHR settings, UUIDs, and connection parameters via UI</p>
             </div>
         </div>
@@ -283,7 +283,7 @@
                 <div class="feature-icon icon-orange">
                     <i class="fas fa-microphone"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">Voice-First Design</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">Voice-First Design</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Simply speak naturally. Our AI understands medical terminology and captures clinical context accurately.
                 </p>
@@ -292,7 +292,7 @@
                 <div class="feature-icon icon-navy">
                     <i class="fas fa-file-medical"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">FHIR-Compliant</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">FHIR-Compliant</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Automatically structures data into FHIR resources—Conditions, Observations, MedicationStatements, and more.
                 </p>
@@ -301,7 +301,7 @@
                 <div class="feature-icon icon-orange">
                     <i class="fas fa-plug"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">EHR Integration</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">EHR Integration</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Connect to OpenMRS, Epic, Cerner, or any FHIR-compatible EHR. Or try our demo mode with no login required.
                 </p>
@@ -310,7 +310,7 @@
                 <div class="feature-icon icon-navy">
                     <i class="fas fa-brain"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">ICD-10 Code Mapping</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">ICD-10 Code Mapping</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Automatically maps diagnoses to accurate ICD-10 codes using intelligent code search and WHO terminology standards.
                 </p>
@@ -319,7 +319,7 @@
                 <div class="feature-icon icon-orange">
                     <i class="fas fa-file-alt"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">Comprehensive Notes</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">Comprehensive Notes</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Generates structured clinical encounter summaries with diagnoses, symptoms, differentials, and recommendations.
                 </p>
@@ -328,7 +328,7 @@
                 <div class="feature-icon icon-navy">
                     <i class="fas fa-cog"></i>
                 </div>
-                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--aidstack-navy);">Fully Configurable</h3>
+                <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--Healthaid-navy);">Fully Configurable</h3>
                 <p class="text-slate-medium leading-relaxed">
                     Customize EHR connection settings, encounter types, locations, and concept UUIDs through an intuitive UI.
                 </p>
@@ -344,23 +344,23 @@
         </div>
         <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--aidstack-orange); color: white;">1</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Select Patient</h3>
+                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--Healthaid-orange); color: white;">1</div>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Select Patient</h3>
                 <p class="text-slate-medium">Search existing patients or create new records</p>
             </div>
             <div class="text-center">
-                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--aidstack-orange); color: white;">2</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Record Visit</h3>
+                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--Healthaid-orange); color: white;">2</div>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Record Visit</h3>
                 <p class="text-slate-medium">Speak naturally about the clinical encounter</p>
             </div>
             <div class="text-center">
-                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--aidstack-orange); color: white;">3</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Review & Edit</h3>
+                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--Healthaid-orange); color: white;">3</div>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Review & Edit</h3>
                 <p class="text-slate-medium">AI extracts FHIR data with ICD-10 codes and confidence scores</p>
             </div>
             <div class="text-center">
-                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--aidstack-orange); color: white;">4</div>
-                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--aidstack-navy);">Save to EHR</h3>
+                <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold" style="background: var(--Healthaid-orange); color: white;">4</div>
+                <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--Healthaid-navy);">Save to EHR</h3>
                 <p class="text-slate-medium">Push comprehensive notes, diagnoses, and ICD-10 codes to EHR</p>
             </div>
         </div>
@@ -400,7 +400,7 @@
 
     <!-- CTA Section -->
     <section class="max-w-7xl mx-auto px-6 py-20">
-        <div class="text-center p-16 rounded-3xl" style="background: linear-gradient(135deg, var(--aidstack-navy) 0%, var(--aidstack-orange) 100%);">
+        <div class="text-center p-16 rounded-3xl" style="background: linear-gradient(135deg, var(--Healthaid-navy) 0%, var(--Healthaid-orange) 100%);">
             <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">
                 Ready to Transform Your Documentation?
             </h2>
@@ -408,11 +408,11 @@
                 Try our demo with no login required. See how AI can save hours on clinical documentation.
             </p>
             <div class="flex flex-wrap gap-4 justify-center">
-                <a href="/src/index.html" class="btn-primary" style="background: white; color: var(--aidstack-navy);">
+                <a href="/src/index.html" class="btn-primary" style="background: white; color: var(--Healthaid-navy);">
                     <i class="fas fa-play"></i>
                     Try Demo Now
                 </a>
-                <a href="mailto:hello@aidstack.ai" class="btn-secondary" style="background: transparent; color: white; border-color: white;">
+                <a href="#" class="btn-secondary" style="background: transparent; color: white; border-color: white;">
                     <i class="fas fa-envelope"></i>
                     Contact Sales
                 </a>
@@ -428,7 +428,7 @@
                     <div class="flex items-center gap-3 mb-4">
                         <div>
                             <div class="font-display font-bold text-xl">
-                                <span style="color: var(--aidstack-orange);">Healthaid</span> <span style="color: var(--Healthaid-navy);">Transcriber</span>
+                                <span style="color: var(--Healthaid-orange);">Healthaid</span> <span style="color: var(--Healthaid-navy);">Transcriber</span>
                             </div>
                         </div>
                     </div>
@@ -437,25 +437,25 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--aidstack-navy);">Product</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--Healthaid-navy);">Product</h4>
                     <ul class="space-y-2 text-sm text-slate-medium">
-                        <li><a href="#features" class="hover:text-aidstack-orange transition">Features</a></li>
-                        <li><a href="/src/index.html" class="hover:text-aidstack-orange transition">Demo</a></li>
-                        <li><a href="#integrations" class="hover:text-aidstack-orange transition">Integrations</a></li>
+                        <li><a href="#features" class="hover:text-Healthaid-orange transition">Features</a></li>
+                        <li><a href="/src/index.html" class="hover:text-Healthaid-orange transition">Demo</a></li>
+                        <li><a href="#integrations" class="hover:text-Healthaid-orange transition">Integrations</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--aidstack-navy);">Company</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--Healthaid-navy);">Company</h4>
                     <ul class="space-y-2 text-sm text-slate-medium">
-                        <li><a href="#" class="hover:text-aidstack-orange transition">About</a></li>
-                        <li><a href="#" class="hover:text-aidstack-orange transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-Healthaid-orange transition">About</a></li>
+                        <li><a href="#" class="hover:text-Healthaid-orange transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--aidstack-navy);">Legal</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--Healthaid-navy);">Legal</h4>
                     <ul class="space-y-2 text-sm text-slate-medium">
-                        <li><a href="#" class="hover:text-aidstack-orange transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-aidstack-orange transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-Healthaid-orange transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-Healthaid-orange transition">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
