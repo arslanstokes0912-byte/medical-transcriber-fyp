@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Onboarding Tour Manager
  */
 
@@ -6,7 +6,7 @@ const OnboardingTour = {
     currentStep: 0,
     steps: [
         {
-            title: 'Welcome to Aidstack!',
+            title: 'Welcome to Healthaid!',
             description: 'Transform voice notes into structured FHIR-compliant clinical documentation in seconds.',
             target: null, // No specific target, just show modal
             position: 'center'
@@ -50,7 +50,7 @@ const OnboardingTour = {
     ],
 
     start() {
-        if (localStorage.getItem('aidstack_onboarding_completed')) {
+        if (localStorage.getItem('Healthaid_onboarding_completed')) {
             return;
         }
         this.currentStep = 0;
@@ -196,7 +196,7 @@ const OnboardingTour = {
     },
 
     complete() {
-        localStorage.setItem('aidstack_onboarding_completed', 'true');
+        localStorage.setItem('Healthaid_onboarding_completed', 'true');
 
         // Force remove ALL onboarding elements
         document.querySelectorAll('#onboarding-overlay, #onboarding-tooltip').forEach(el => {
@@ -207,7 +207,7 @@ const OnboardingTour = {
     },
 
     reset() {
-        localStorage.removeItem('aidstack_onboarding_completed');
+        localStorage.removeItem('Healthaid_onboarding_completed');
         toast.info('Onboarding reset. Reload the page to see it again.');
     }
 };

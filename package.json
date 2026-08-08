@@ -1,5 +1,5 @@
-{
-  "name": "aidstack-medical-ai",
+﻿{
+  "name": "Healthaid-medical-ai",
   "version": "2.0.0",
   "description": "FHIR-compliant clinical transcription with pluggable EHR connectors",
   "main": "server.js",
@@ -17,7 +17,7 @@
     "EHR",
     "connectors"
   ],
-  "author": "Aidstack",
+  "author": "Healthaid",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^17.2.3"

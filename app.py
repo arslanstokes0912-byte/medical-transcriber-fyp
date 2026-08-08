@@ -1,5 +1,5 @@
-"""
-Aidstack Medical AI - Backend Server
+﻿"""
+Healthaid Medical AI - Backend Server
 HIPAA-compliant backend for secure API key management and data handling
 """
 
@@ -60,7 +60,7 @@ def health_check():
     """Health check endpoint"""
     return jsonify({
         'status': 'healthy',
-        'service': 'Aidstack Medical AI Backend',
+        'service': 'Healthaid Medical AI Backend',
         'timestamp': datetime.utcnow().isoformat()
     })
 

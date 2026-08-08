@@ -1,5 +1,5 @@
-/**
- * Aidstack Medical AI - Server
+﻿/**
+ * Healthaid Medical AI - Server
  * Serves the application and proxies OpenMRS API requests
  */
 
@@ -201,11 +201,11 @@ function serveFile(filePath, mimeType, res) {
 
 if (require.main === module) {
     http.createServer(requestHandler).listen(PORT, () => {
-        console.log(`\n✅ Aidstack Medical AI Server running!`);
-        console.log(`🌐 Open: http://localhost:${PORT}`);
-        console.log(`🔄 Proxying OpenMRS API at: ${OPENMRS_BASE_URL}`);
-        console.log(`📁 Serving from: ./src`);
-        console.log(`🔌 Connectors: ./connectors\n`);
+        console.log(`\nâœ… Healthaid Medical AI Server running!`);
+        console.log(`ðŸŒ Open: http://localhost:${PORT}`);
+        console.log(`ðŸ”„ Proxying OpenMRS API at: ${OPENMRS_BASE_URL}`);
+        console.log(`ðŸ“ Serving from: ./src`);
+        console.log(`ðŸ”Œ Connectors: ./connectors\n`);
     });
 }
 

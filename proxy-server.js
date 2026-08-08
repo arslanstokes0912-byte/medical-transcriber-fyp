@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Simple CORS proxy for OpenMRS API
  * This allows the frontend to bypass CORS restrictions
  */
@@ -81,7 +81,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n✅ Aidstack Medical AI Server running!`);
-  console.log(`🌐 Open: http://localhost:${PORT}`);
-  console.log(`🔄 Proxying OpenMRS API at: ${OPENMRS_BASE_URL}\n`);
+  console.log(`\nâœ… Healthaid Medical AI Server running!`);
+  console.log(`ðŸŒ Open: http://localhost:${PORT}`);
+  console.log(`ðŸ”„ Proxying OpenMRS API at: ${OPENMRS_BASE_URL}\n`);
 });

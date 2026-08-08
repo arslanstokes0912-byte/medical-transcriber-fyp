@@ -1,8 +1,8 @@
-# Deploying to transcriber.aidstack.ai
+﻿# Deploying to transcriber.Healthaid.ai
 
 ## Overview
 
-This guide will help you deploy the Aidstack Medical AI transcription app to `transcriber.aidstack.ai`.
+This guide will help you deploy the Healthaid Medical AI transcription app to `transcriber.Healthaid.ai`.
 
 ## What's Included
 
@@ -12,9 +12,9 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
 
 ## URL Structure
 
-- `https://transcriber.aidstack.ai/` - Landing page
-- `https://transcriber.aidstack.ai/src/index.html` - Direct link to app (used in CTA buttons)
-- `https://transcriber.aidstack.ai/app` - Alternative app URL
+- `https://transcriber.Healthaid.ai/` - Landing page
+- `https://transcriber.Healthaid.ai/src/index.html` - Direct link to app (used in CTA buttons)
+- `https://transcriber.Healthaid.ai/app` - Alternative app URL
 
 ## Deployment Options
 
@@ -71,12 +71,12 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
    ```
 
 4. **Set custom domain**:
-   - Go to Vercel dashboard → Your project → Settings → Domains
-   - Add `transcriber.aidstack.ai`
+   - Go to Vercel dashboard â†’ Your project â†’ Settings â†’ Domains
+   - Add `transcriber.Healthaid.ai`
    - Update your DNS records as instructed by Vercel
 
 5. **Add environment variable** (if using .env for API keys):
-   - Go to Settings → Environment Variables
+   - Go to Settings â†’ Environment Variables
    - Add `OPENAI_API_KEY` (if you plan to move it server-side)
 
 ### Option 2: Deploy to DigitalOcean App Platform
@@ -86,12 +86,12 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/aidstack-transcriber.git
+   git remote add origin https://github.com/yourusername/Healthaid-transcriber.git
    git push -u origin main
    ```
 
 2. **Create App on DigitalOcean**:
-   - Go to Apps → Create App
+   - Go to Apps â†’ Create App
    - Connect your GitHub repository
    - Select the repository
    - Configure:
@@ -100,8 +100,8 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
      - **HTTP Port**: 3000
 
 3. **Set custom domain**:
-   - Go to Settings → Domains
-   - Add `transcriber.aidstack.ai`
+   - Go to Settings â†’ Domains
+   - Add `transcriber.Healthaid.ai`
    - Update your DNS records
 
 ### Option 3: Traditional VPS (Ubuntu)
@@ -120,8 +120,8 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
 3. **Clone or upload the project**:
    ```bash
    cd /var/www
-   git clone https://github.com/yourusername/aidstack-transcriber.git
-   cd aidstack-transcriber
+   git clone https://github.com/yourusername/Healthaid-transcriber.git
+   cd Healthaid-transcriber
    ```
 
 4. **Install PM2** (process manager):
@@ -131,7 +131,7 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
 
 5. **Start the app**:
    ```bash
-   pm2 start server.js --name aidstack-transcriber
+   pm2 start server.js --name Healthaid-transcriber
    pm2 save
    pm2 startup
    ```
@@ -140,7 +140,7 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
    ```nginx
    server {
        listen 80;
-       server_name transcriber.aidstack.ai;
+       server_name transcriber.Healthaid.ai;
 
        location / {
            proxy_pass http://localhost:3000;
@@ -156,7 +156,7 @@ This guide will help you deploy the Aidstack Medical AI transcription app to `tr
 7. **Enable SSL with Certbot**:
    ```bash
    sudo apt install certbot python3-certbot-nginx
-   sudo certbot --nginx -d transcriber.aidstack.ai
+   sudo certbot --nginx -d transcriber.Healthaid.ai
    ```
 
 ## DNS Configuration
@@ -179,8 +179,8 @@ TTL: Auto
 
 ## Post-Deployment
 
-1. **Test the landing page**: Visit `https://transcriber.aidstack.ai`
-2. **Test the app**: Click "Try Demo" button or visit `https://transcriber.aidstack.ai/src/index.html`
+1. **Test the landing page**: Visit `https://transcriber.Healthaid.ai`
+2. **Test the app**: Click "Try Demo" button or visit `https://transcriber.Healthaid.ai/src/index.html`
 3. **Verify OpenMRS proxy**: Try connecting to OpenMRS in the app
 4. **Check SSL certificate**: Ensure HTTPS is working
 
@@ -201,7 +201,7 @@ Then update `src/index.html` to fetch the key from the server instead of the met
 - **DigitalOcean**: App Platform includes monitoring
 - **VPS**: Use PM2 logs:
   ```bash
-  pm2 logs aidstack-transcriber
+  pm2 logs Healthaid-transcriber
   pm2 monit
   ```
 
@@ -217,9 +217,9 @@ Push to GitHub, auto-deploys
 
 ### VPS
 ```bash
-cd /var/www/aidstack-transcriber
+cd /var/www/Healthaid-transcriber
 git pull
-pm2 restart aidstack-transcriber
+pm2 restart Healthaid-transcriber
 ```
 
 ## Security Checklist
@@ -253,5 +253,5 @@ pm2 restart aidstack-transcriber
 ## Support
 
 For issues or questions:
-- Email: hello@aidstack.ai
+- Email: hello@Healthaid.ai
 - GitHub: [Your repo URL]

@@ -1,4 +1,4 @@
-# Aidstack Medical AI - Modular Architecture
+﻿# Healthaid Medical AI - Modular Architecture
 
 ## Overview
 
@@ -11,23 +11,23 @@ Version 2.0 introduces a modular, connector-based architecture that allows users
 
 ```
 ai_medical_transcriber/
-├── src/                      # Frontend application
-│   ├── index.html           # Main application UI
-│   ├── js/                  # JavaScript modules (future)
-│   └── css/                 # Stylesheets (future)
-│
-├── connectors/              # EHR connector plugins
-│   ├── base-connector.js    # Base class/interface
-│   ├── demo-connector.js    # Demo mode (no EHR)
-│   ├── openmrs-connector.js # OpenMRS integration
-│   └── README.md            # How to create connectors
-│
-├── config/                  # Configuration files
-│   └── connectors.json      # Connector registry
-│
-├── server.js                # Node.js server
-├── package.json             # Dependencies
-└── .env                     # API keys (gitignored)
+â”œâ”€â”€ src/                      # Frontend application
+â”‚   â”œâ”€â”€ index.html           # Main application UI
+â”‚   â”œâ”€â”€ js/                  # JavaScript modules (future)
+â”‚   â””â”€â”€ css/                 # Stylesheets (future)
+â”‚
+â”œâ”€â”€ connectors/              # EHR connector plugins
+â”‚   â”œâ”€â”€ base-connector.js    # Base class/interface
+â”‚   â”œâ”€â”€ demo-connector.js    # Demo mode (no EHR)
+â”‚   â”œâ”€â”€ openmrs-connector.js # OpenMRS integration
+â”‚   â””â”€â”€ README.md            # How to create connectors
+â”‚
+â”œâ”€â”€ config/                  # Configuration files
+â”‚   â””â”€â”€ connectors.json      # Connector registry
+â”‚
+â”œâ”€â”€ server.js                # Node.js server
+â”œâ”€â”€ package.json             # Dependencies
+â””â”€â”€ .env                     # API keys (gitignored)
 ```
 
 ## Key Features
@@ -38,15 +38,15 @@ Users start by selecting their EHR connection:
 
 ```
 Step 0: Choose EHR Connection
-├── Demo Mode (default)
-│   └── No login required
-│   └── In-browser storage only
-│   └── Perfect for testing
-│
-└── OpenMRS
-    └── Requires credentials
-    └── Connects to real EHR
-    └── Production-ready
+â”œâ”€â”€ Demo Mode (default)
+â”‚   â””â”€â”€ No login required
+â”‚   â””â”€â”€ In-browser storage only
+â”‚   â””â”€â”€ Perfect for testing
+â”‚
+â””â”€â”€ OpenMRS
+    â””â”€â”€ Requires credentials
+    â””â”€â”€ Connects to real EHR
+    â””â”€â”€ Production-ready
 ```
 
 ###2. Demo Mode Benefits
@@ -159,10 +159,10 @@ See `connectors/README.md` for detailed instructions.
 
 ### Connector Loading
 
-1. Page loads → fetch `/config/connectors.json`
+1. Page loads â†’ fetch `/config/connectors.json`
 2. Display enabled connectors as cards
-3. User selects → instantiate connector class
-4. Call `initialize()` → load metadata
+3. User selects â†’ instantiate connector class
+4. Call `initialize()` â†’ load metadata
 5. Proceed to patient selection
 
 ### Demo Connector Features
@@ -217,9 +217,9 @@ server.js (generic, multi-connector)
 ```
 
 **Old files preserved:**
-- `index.html` → Original backup
-- `index-v2.html` → Working v1 version
-- `proxy-server.js` → Old server (use `npm run old`)
+- `index.html` â†’ Original backup
+- `index-v2.html` â†’ Working v1 version
+- `proxy-server.js` â†’ Old server (use `npm run old`)
 
 ## Future Enhancements
 

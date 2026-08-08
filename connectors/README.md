@@ -1,6 +1,6 @@
-# EHR Connectors
+﻿# EHR Connectors
 
-This directory contains pluggable EHR connectors for Aidstack Medical AI.
+This directory contains pluggable EHR connectors for Healthaid Medical AI.
 
 ## Available Connectors
 
@@ -75,7 +75,7 @@ class YourEHRConnector extends BaseConnector {
             description: 'Connect to Your EHR system',
             requiresAuth: true,
             isDemo: false,
-            icon: '🏥'
+            icon: 'ðŸ¥'
         };
     }
 }
@@ -92,7 +92,7 @@ Add your connector to `config/connectors.json`:
       "id": "your-ehr",
       "name": "Your EHR Name",
       "description": "Connect to Your EHR system",
-      "icon": "🏥",
+      "icon": "ðŸ¥",
       "enabled": true,
       "requiresAuth": true,
       "class": "YourEHRConnector",

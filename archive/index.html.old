@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidstack Transcriber | Clinical Documentation</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <title>Healthaid Transcriber | Clinical Documentation</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ§ </text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
         :root {
-            --aidstack-navy: #1A365D;
-            --aidstack-orange: #FF6B35;
+            --Healthaid-navy: #1A365D;
+            --Healthaid-orange: #FF6B35;
             --slate-dark: #0F172A;
             --slate-medium: #475569;
             --slate-light: #94A3B8;
@@ -54,7 +54,7 @@
             align-items: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: var(--aidstack-orange);
+            background: var(--Healthaid-orange);
         }
 
         .mic-container:hover {
@@ -84,12 +84,12 @@
 
         .speaker-doctor {
             background: rgba(26, 54, 93, 0.1);
-            color: var(--aidstack-navy);
+            color: var(--Healthaid-navy);
         }
 
         .speaker-patient {
             background: rgba(255, 107, 53, 0.1);
-            color: var(--aidstack-orange);
+            color: var(--Healthaid-orange);
         }
 
         .progress-steps {
@@ -132,14 +132,14 @@
         }
 
         .progress-step.active .progress-step-circle {
-            border-color: var(--aidstack-navy);
-            background: var(--aidstack-navy);
+            border-color: var(--Healthaid-navy);
+            background: var(--Healthaid-navy);
             color: white;
         }
 
         .progress-step.completed .progress-step-circle {
-            border-color: var(--aidstack-orange);
-            background: var(--aidstack-orange);
+            border-color: var(--Healthaid-orange);
+            background: var(--Healthaid-orange);
             color: white;
         }
     </style>
@@ -147,12 +147,12 @@
 <body class="min-h-screen p-4">
     <!-- Header -->
     <div class="max-w-7xl mx-auto mb-8">
-        <div class="card p-6" style="background: var(--aidstack-navy);">
+        <div class="card p-6" style="background: var(--Healthaid-navy);">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
                     <div>
                         <h1 class="font-display font-bold text-2xl text-white">
-                            <span style="color: var(--aidstack-orange);">Aidstack</span> Transcriber
+                            <span style="color: var(--Healthaid-orange);">Healthaid</span> Transcriber
                         </h1>
                         <p class="text-sm" style="color: var(--slate-light);">FHIR-compliant clinical documentation</p>
                     </div>
@@ -200,7 +200,7 @@
         <div class="step active" id="step0">
             <div class="card p-8 mb-6">
                 <h2 class="font-display font-bold text-2xl mb-6" style="color: var(--slate-dark);">
-                    <i class="fas fa-plug mr-3" style="color: var(--aidstack-orange);"></i>
+                    <i class="fas fa-plug mr-3" style="color: var(--Healthaid-orange);"></i>
                     Choose Your EHR Connection
                 </h2>
 
@@ -217,7 +217,7 @@
                 </div>
 
                 <div class="mt-8 flex justify-end">
-                    <button id="continueFromConnectorBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--aidstack-orange); color: white;" disabled>
+                    <button id="continueFromConnectorBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--Healthaid-orange); color: white;" disabled>
                         Continue to Patient Info <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -228,7 +228,7 @@
         <div class="step" id="step1">
             <div class="card p-8 mb-6">
                 <h2 class="font-display font-bold text-2xl mb-6" style="color: var(--slate-dark);">
-                    <i class="fas fa-user-md mr-3" style="color: var(--aidstack-navy);"></i>
+                    <i class="fas fa-user-md mr-3" style="color: var(--Healthaid-navy);"></i>
                     Step 1: Patient Information
                 </h2>
 
@@ -246,7 +246,7 @@
                 <!-- Patient Mode Toggle (for real EHRs) -->
                 <div id="patientModeToggle" class="mb-6">
                     <div class="flex gap-4">
-                        <label class="flex items-center cursor-pointer px-6 py-3 border-2 rounded-lg transition-all" style="border-color: var(--aidstack-navy); background: rgba(26, 54, 93, 0.05);">
+                        <label class="flex items-center cursor-pointer px-6 py-3 border-2 rounded-lg transition-all" style="border-color: var(--Healthaid-navy); background: rgba(26, 54, 93, 0.05);">
                             <input type="radio" name="patientMode" value="new" class="mr-3" checked>
                             <span class="font-display font-medium" style="color: var(--slate-dark);">New Patient</span>
                         </label>
@@ -261,15 +261,15 @@
                 <div id="newPatientForm">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Given Name <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Given Name <span style="color: var(--Healthaid-orange);">*</span></label>
                             <input type="text" id="patientGivenName" placeholder="John" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                         </div>
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Family Name <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Family Name <span style="color: var(--Healthaid-orange);">*</span></label>
                             <input type="text" id="patientFamilyName" placeholder="Doe" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                         </div>
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Gender <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Gender <span style="color: var(--Healthaid-orange);">*</span></label>
                             <select id="patientGender" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                                 <option value="">Select...</option>
                                 <option value="M">Male</option>
@@ -277,17 +277,17 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Birth Date <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Birth Date <span style="color: var(--Healthaid-orange);">*</span></label>
                             <input type="date" id="patientBirthdate" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                         </div>
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">ID Type <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">ID Type <span style="color: var(--Healthaid-orange);">*</span></label>
                             <select id="patientIdentifierType" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                                 <option value="">Loading...</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Patient ID <span style="color: var(--aidstack-orange);">*</span></label>
+                            <label class="block text-sm font-display font-medium mb-2" style="color: var(--slate-dark);">Patient ID <span style="color: var(--Healthaid-orange);">*</span></label>
                             <input type="text" id="patientIdentifier" placeholder="MRN-12345" class="w-full px-4 py-3 border rounded-lg" style="border-color: var(--slate-light);">
                         </div>
                     </div>
@@ -305,7 +305,7 @@
                 </div>
 
                 <div class="mt-8 flex justify-end">
-                    <button id="continueToRecordBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--aidstack-orange); color: white;">
+                    <button id="continueToRecordBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--Healthaid-orange); color: white;">
                         Continue to Recording <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -316,7 +316,7 @@
         <div class="step" id="step2">
             <div class="card p-8 mb-6">
                 <h2 class="font-display font-bold text-2xl mb-6" style="color: var(--slate-dark);">
-                    <i class="fas fa-microphone mr-3" style="color: var(--aidstack-orange);"></i>
+                    <i class="fas fa-microphone mr-3" style="color: var(--Healthaid-orange);"></i>
                     Step 2: Record Clinical Note
                 </h2>
 
@@ -337,7 +337,7 @@
                     <button id="backToPatientBtn" class="px-6 py-3 rounded-lg font-display font-medium" style="background: white; border: 2px solid var(--slate-light); color: var(--slate-dark);">
                         <i class="fas fa-arrow-left mr-2"></i>Back
                     </button>
-                    <button id="continueToReviewBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--aidstack-navy); color: white;">
+                    <button id="continueToReviewBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--Healthaid-navy); color: white;">
                         Process & Review <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -349,7 +349,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
                 <div class="card p-6">
                     <h3 class="font-display font-semibold text-lg mb-4" style="color: var(--slate-dark);">
-                        <i class="fas fa-file-medical mr-2" style="color: var(--aidstack-orange);"></i>
+                        <i class="fas fa-file-medical mr-2" style="color: var(--Healthaid-orange);"></i>
                         FHIR Structured Data
                     </h3>
                     <div id="processedData" class="space-y-4"></div>
@@ -367,7 +367,7 @@
                 <button id="backToRecordBtn" class="px-6 py-3 rounded-lg font-display font-medium" style="background: white; border: 2px solid var(--slate-light); color: var(--slate-dark);">
                     <i class="fas fa-arrow-left mr-2"></i>Back
                 </button>
-                <button id="pushToEHRBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--aidstack-orange); color: white;">
+                <button id="pushToEHRBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--Healthaid-orange); color: white;">
                     <i class="fas fa-database mr-2"></i>Push to OpenMRS
                 </button>
             </div>
@@ -377,7 +377,7 @@
         <div class="step" id="step4">
             <div class="card p-8 text-center">
                 <div class="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: rgba(255, 107, 53, 0.1);">
-                    <i class="fas fa-check-circle text-6xl" style="color: var(--aidstack-orange);"></i>
+                    <i class="fas fa-check-circle text-6xl" style="color: var(--Healthaid-orange);"></i>
                 </div>
                 <h2 class="font-display font-bold text-3xl mb-4" style="color: var(--slate-dark);">Successfully Pushed to OpenMRS!</h2>
                 <p class="text-lg mb-6" style="color: var(--slate-medium);">Patient record and clinical note have been saved to the EHR system.</p>
@@ -385,7 +385,7 @@
                 <!-- Push Summary -->
                 <div id="pushSummary" class="text-left max-w-2xl mx-auto mb-8 p-6 rounded-lg" style="background: var(--slate-bg); border: 1px solid var(--slate-light);">
                     <h3 class="font-display font-semibold text-lg mb-4" style="color: var(--slate-dark);">
-                        <i class="fas fa-clipboard-check mr-2" style="color: var(--aidstack-orange);"></i>
+                        <i class="fas fa-clipboard-check mr-2" style="color: var(--Healthaid-orange);"></i>
                         Record Summary
                     </h3>
                     <div class="space-y-3 text-sm" style="color: var(--slate-medium);">
@@ -393,7 +393,7 @@
                     </div>
                 </div>
 
-                <button id="startNewBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--aidstack-navy); color: white;">
+                <button id="startNewBtn" class="px-8 py-3 rounded-lg font-display font-semibold text-lg" style="background: var(--Healthaid-navy); color: white;">
                     <i class="fas fa-plus mr-2"></i>Start New Recording
                 </button>
             </div>
@@ -462,7 +462,7 @@
                         <h3 class="font-display font-bold text-lg mb-2" style="color: var(--slate-dark);">${connector.name}</h3>
                         <p class="text-sm mb-3" style="color: var(--slate-medium);">${connector.description}</p>
                         ${connector.isDemo || !connector.requiresAuth ?
-                            '<span class="inline-block px-3 py-1 rounded-full text-xs font-semibold" style="background: rgba(255, 107, 53, 0.1); color: var(--aidstack-orange);">No Login Required</span>' :
+                            '<span class="inline-block px-3 py-1 rounded-full text-xs font-semibold" style="background: rgba(255, 107, 53, 0.1); color: var(--Healthaid-orange);">No Login Required</span>' :
                             '<span class="inline-block px-3 py-1 rounded-full text-xs" style="background: var(--slate-bg); color: var(--slate-medium);">Requires Login</span>'
                         }
                     `;
@@ -482,7 +482,7 @@
             } catch (error) {
                 console.error('Failed to load connectors:', error);
                 document.getElementById('connectorList').innerHTML = `
-                    <div class="col-span-2 text-center py-8" style="color: var(--aidstack-orange);">
+                    <div class="col-span-2 text-center py-8" style="color: var(--Healthaid-orange);">
                         <i class="fas fa-exclamation-triangle text-2xl mb-2"></i>
                         <p>Failed to load connectors. Please refresh the page.</p>
                     </div>
@@ -498,7 +498,7 @@
             });
 
             // Highlight selected card
-            cardElement.style.borderColor = 'var(--aidstack-orange)';
+            cardElement.style.borderColor = 'var(--Healthaid-orange)';
             cardElement.style.background = 'rgba(255, 107, 53, 0.05)';
 
             selectedConnector = availableConnectors.find(c => c.id === connectorId);
@@ -519,7 +519,7 @@
                 }
 
                 await currentConnector.initialize();
-                console.log('✅ Connector initialized:', currentConnector.name);
+                console.log('âœ… Connector initialized:', currentConnector.name);
 
                 // Update metadata for display
                 const metadata = currentConnector.getMetadata();
@@ -594,7 +594,7 @@
                                     ${patient.givenName} ${patient.familyName}
                                 </h4>
                                 <p class="text-sm" style="color: var(--slate-medium);">
-                                    ${patient.gender === 'M' ? 'Male' : 'Female'} • ${patient.identifier}
+                                    ${patient.gender === 'M' ? 'Male' : 'Female'} â€¢ ${patient.identifier}
                                 </p>
                             </div>
                         </div>
@@ -607,7 +607,7 @@
                 }
             } catch (error) {
                 console.error('Failed to load demo patients:', error);
-                demoPatientList.innerHTML = '<p class="text-sm" style="color: var(--aidstack-orange);">Failed to load demo patients</p>';
+                demoPatientList.innerHTML = '<p class="text-sm" style="color: var(--Healthaid-orange);">Failed to load demo patients</p>';
             }
         }
 
@@ -621,7 +621,7 @@
             // Highlight selected card
             const selectedCard = document.querySelector(`.demo-patient-card[onclick*="${uuid}"]`);
             if (selectedCard) {
-                selectedCard.style.borderColor = 'var(--aidstack-orange)';
+                selectedCard.style.borderColor = 'var(--Healthaid-orange)';
                 selectedCard.style.background = 'rgba(255, 107, 53, 0.05)';
             }
 
@@ -641,7 +641,7 @@
             }
 
             const info = currentConnector.getInfo();
-            const icon = info.icon || '🔌';
+            const icon = info.icon || 'ðŸ”Œ';
 
             if (currentConnector.isDemo) {
                 badge.innerHTML = `<span class="mr-2">${icon}</span>${info.name}`;
@@ -670,7 +670,7 @@
                 if (success) {
                     goToStep(1);
                 } else {
-                    btn.textContent = 'Continue to Patient Info →';
+                    btn.textContent = 'Continue to Patient Info â†’';
                     btn.disabled = false;
                 }
             });
@@ -902,7 +902,7 @@
                 const results = await currentConnector.searchPatients(query);
                 displaySearchResults(results);
             } catch (error) {
-                searchResults.innerHTML = '<p class="text-sm" style="color: var(--aidstack-orange);">Error: ' + error.message + '</p>';
+                searchResults.innerHTML = '<p class="text-sm" style="color: var(--Healthaid-orange);">Error: ' + error.message + '</p>';
             }
         }
 
@@ -939,11 +939,11 @@
             // Clear search results and show only selected patient
             const searchResults = document.getElementById('searchResults');
             searchResults.innerHTML = `
-                <div class="p-4 border-2 rounded-lg" style="border-color: var(--aidstack-navy); background: rgba(26, 54, 93, 0.05);">
+                <div class="p-4 border-2 rounded-lg" style="border-color: var(--Healthaid-navy); background: rgba(26, 54, 93, 0.05);">
                     <div class="flex items-center justify-between">
                         <div>
                             <div class="font-display font-semibold text-lg" style="color: var(--slate-dark);">
-                                <i class="fas fa-check-circle mr-2" style="color: var(--aidstack-navy);"></i>
+                                <i class="fas fa-check-circle mr-2" style="color: var(--Healthaid-navy);"></i>
                                 ${name}
                             </div>
                             <div class="text-sm mt-1" style="color: var(--slate-medium);">ID: ${identifier}</div>
@@ -1086,7 +1086,7 @@ Transcription: ${fullTranscription}`
                 console.error('Error:', error);
                 document.getElementById('status').textContent = 'Error processing with AI';
                 document.getElementById('processedData').innerHTML =
-                    `<p style="color: var(--aidstack-orange);">Error: ${error.message}</p>`;
+                    `<p style="color: var(--Healthaid-orange);">Error: ${error.message}</p>`;
                 document.getElementById('rawJsonPayload').textContent = `Error: ${error.message}`;
             }
         }
@@ -1115,9 +1115,9 @@ Transcription: ${fullTranscription}`
                 if (symptoms.length > 0) {
                     const section = document.createElement('div');
                     section.innerHTML = `
-                        <h4 class="font-display font-semibold mb-2" style="color: var(--aidstack-navy);">Symptoms</h4>
+                        <h4 class="font-display font-semibold mb-2" style="color: var(--Healthaid-navy);">Symptoms</h4>
                         <ul class="space-y-1">
-                            ${symptoms.map(s => `<li class="text-sm">• ${s.resource.code?.text || 'Unknown'}</li>`).join('')}
+                            ${symptoms.map(s => `<li class="text-sm">â€¢ ${s.resource.code?.text || 'Unknown'}</li>`).join('')}
                         </ul>
                     `;
                     container.appendChild(section);
@@ -1128,9 +1128,9 @@ Transcription: ${fullTranscription}`
                 if (conditions.length > 0) {
                     const section = document.createElement('div');
                     section.innerHTML = `
-                        <h4 class="font-display font-semibold mb-2" style="color: var(--aidstack-navy);">Diagnoses</h4>
+                        <h4 class="font-display font-semibold mb-2" style="color: var(--Healthaid-navy);">Diagnoses</h4>
                         <ul class="space-y-1">
-                            ${conditions.map(c => `<li class="text-sm">• ${c.resource.code?.text || 'Unknown'}</li>`).join('')}
+                            ${conditions.map(c => `<li class="text-sm">â€¢ ${c.resource.code?.text || 'Unknown'}</li>`).join('')}
                         </ul>
                     `;
                     container.appendChild(section);
@@ -1141,9 +1141,9 @@ Transcription: ${fullTranscription}`
                 if (meds.length > 0) {
                     const section = document.createElement('div');
                     section.innerHTML = `
-                        <h4 class="font-display font-semibold mb-2" style="color: var(--aidstack-navy);">Medications</h4>
+                        <h4 class="font-display font-semibold mb-2" style="color: var(--Healthaid-navy);">Medications</h4>
                         <ul class="space-y-1">
-                            ${meds.map(m => `<li class="text-sm">• ${m.resource.medicationCodeableConcept?.text || 'Unknown'}</li>`).join('')}
+                            ${meds.map(m => `<li class="text-sm">â€¢ ${m.resource.medicationCodeableConcept?.text || 'Unknown'}</li>`).join('')}
                         </ul>
                     `;
                     container.appendChild(section);
@@ -1154,9 +1154,9 @@ Transcription: ${fullTranscription}`
                 if (procs.length > 0) {
                     const section = document.createElement('div');
                     section.innerHTML = `
-                        <h4 class="font-display font-semibold mb-2" style="color: var(--aidstack-navy);">Procedures</h4>
+                        <h4 class="font-display font-semibold mb-2" style="color: var(--Healthaid-navy);">Procedures</h4>
                         <ul class="space-y-1">
-                            ${procs.map(p => `<li class="text-sm">• ${p.resource.code?.text || 'Unknown'}</li>`).join('')}
+                            ${procs.map(p => `<li class="text-sm">â€¢ ${p.resource.code?.text || 'Unknown'}</li>`).join('')}
                         </ul>
                     `;
                     container.appendChild(section);
@@ -1164,7 +1164,7 @@ Transcription: ${fullTranscription}`
 
             } catch (error) {
                 console.error('FHIR parsing error:', error);
-                container.innerHTML = `<p style="color: var(--aidstack-orange);">Error parsing FHIR data: ${error.message}</p>`;
+                container.innerHTML = `<p style="color: var(--Healthaid-orange);">Error parsing FHIR data: ${error.message}</p>`;
             }
         }
 
@@ -1176,7 +1176,7 @@ Transcription: ${fullTranscription}`
             let diagnosesHTML = '';
             if (lastPushSummary.diagnoses.length > 0) {
                 diagnosesHTML = lastPushSummary.diagnoses.map(d =>
-                    `<div class="pl-4">• ${d}</div>`
+                    `<div class="pl-4">â€¢ ${d}</div>`
                 ).join('');
             } else {
                 diagnosesHTML = '<div class="pl-4" style="color: var(--slate-light);">No diagnoses recorded</div>';
@@ -1185,7 +1185,7 @@ Transcription: ${fullTranscription}`
             let symptomsHTML = '';
             if (lastPushSummary.symptoms && lastPushSummary.symptoms.length > 0) {
                 symptomsHTML = lastPushSummary.symptoms.map(s =>
-                    `<div class="pl-4">• ${s}</div>`
+                    `<div class="pl-4">â€¢ ${s}</div>`
                 ).join('');
             } else {
                 symptomsHTML = '<div class="pl-4" style="color: var(--slate-light);">No symptoms recorded</div>';
@@ -1200,7 +1200,7 @@ Transcription: ${fullTranscription}`
                 </div>
                 <div>
                     <strong style="color: var(--slate-dark);">Encounter Type:</strong>
-                    <span style="color: var(--aidstack-orange); font-weight: 600;">${lastPushSummary.encounterType}</span>
+                    <span style="color: var(--Healthaid-orange); font-weight: 600;">${lastPushSummary.encounterType}</span>
                 </div>
                 <div>
                     <strong style="color: var(--slate-dark);">Location:</strong> ${lastPushSummary.location}
@@ -1210,7 +1210,7 @@ Transcription: ${fullTranscription}`
                 </div>
                 <div>
                     <strong style="color: var(--slate-dark);">Clinical Notes:</strong>
-                    ${lastPushSummary.hasNotes ? '<span style="color: green;">✓ Recorded</span>' : '<span style="color: var(--slate-light);">None</span>'}
+                    ${lastPushSummary.hasNotes ? '<span style="color: green;">âœ“ Recorded</span>' : '<span style="color: var(--slate-light);">None</span>'}
                 </div>
                 <div>
                     <strong style="color: var(--slate-dark);">Symptoms (${lastPushSummary.symptomsCount || 0}):</strong>

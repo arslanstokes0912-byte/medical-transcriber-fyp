@@ -1,9 +1,9 @@
-/**
+﻿/**
  * Session History Manager - localStorage persistence
  */
 
 const SessionManager = {
-    STORAGE_KEY: 'aidstack_sessions',
+    STORAGE_KEY: 'Healthaid_sessions',
     MAX_SESSIONS: 50,
 
     saveSession(sessionData) {
@@ -77,7 +77,7 @@ const SessionManager = {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `aidstack-session-${session.id}.json`;
+        a.download = `Healthaid-session-${session.id}.json`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -133,7 +133,7 @@ const SessionManager = {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `aidstack-note-${session.id}.html`;
+        a.download = `Healthaid-note-${session.id}.html`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
